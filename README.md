@@ -1,8 +1,11 @@
 Prerequisites
+
 Note: all the experiments were conducted over a server equipped with 86 GB RAM, 3.1 GHz on 12 cores and 64-bit Linux Mint Cinnamon operating system. We strongly recommend a similar or better hardware environment. The operating system however could be changed.
+
 Softwares:
     1. Java 1.8
     2. Postgres 12.7 - Configure your DB to accept local connections. An example of pg_hba.conf configuration:
+
 ...
 # TYPE  DATABASE        USER            ADDRESS                 METHOD
 # "local" is for Unix domain socket connections only
@@ -12,6 +15,7 @@ host    all             all             127.0.0.1/32            md5
 ...
 
 3. PgAdmin (we used PgAdmin 4) but feel free to use any DB tool for PostgreSQL.
+
 
 Configuring the dataset
     1. Download the SO Dump of March 2019 (backup2019crar-min.backup). This is a preprocessed dump, downloaded from the official web site containing the main tables we use. We only consider Java posts. Postsmin table (representing posts table) has extra columns with the preprocessed data used by Crar.
@@ -30,8 +34,13 @@ CREATE DATABASE stackoverflow2019journaldycrokage
 Obs: restoring this dump would require at least 30 Gb of free space. If your operating system runs in a partition with insufficient free space, create a tablespace pointing to a larger partition and associate the database to it by replacing the "TABLESPACE" value to the new tablespace name: TABLESPACE = tablespacename.
     4. Assert the database is sound. Execute the following SQL command: “select id, title,sentencevectors from postsmin po limit 100”.
 
+
 Running CRAR.
+
+
 Download the artifacts
+
+
 Download the project folder. Place it preferably in your home folder, ex /home/user/crar. Check your installation. Make sure your crar folder (/home/user/crar) contains this structure:
 ..
 ./data 
