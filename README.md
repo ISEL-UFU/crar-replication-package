@@ -103,3 +103,10 @@ java -Xms1024M -Xmx50g -jar crar.jar --spring.config.location=./replication-pack
 ```
 
 This command uses the file replication-package-application.properties to overwrite the default parameters which must be set as described above. The results will be displayed in the terminal. The total duration of the experiment is around 2 hours. 
+
+
+Something not working as expected?
+------------------------------------------------------------------------
+Create an issue from [here](https://github.com/lascam-UFU/CRAR/issues/new)
+
+
