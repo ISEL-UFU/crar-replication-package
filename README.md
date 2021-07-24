@@ -36,7 +36,7 @@ host    all             all             127.0.0.1/32            md5
 Configuring the dataset
 -----------------------------------------------------------
 
-1. Download the SO Dump of March 2019 (backup2019crar-min.backup). This is a preprocessed dump, downloaded from the official web site containing the main tables we use. We only consider Java posts. Postsmin table (representing posts table) has extra columns with the preprocessed data used by Crar.
+1. Download the SO Dump of March 2019 (backup2019crar-min.backup - available on Zenodo https://zenodo.org/record/5115300#.YPyOcDrQ9H7). This is a preprocessed dump, downloaded from the official web site containing the main tables we use. We only consider Java posts. Postsmin table (representing posts table) has extra columns with the preprocessed data used by Crar.
 
 2. On your DB tool, create a new database named stackoverflow2019journaldycrokage. This is a query example:
 
@@ -72,7 +72,7 @@ Download the project folder. Place it preferably in your home folder, ex /home/u
 
 ```
 ./data 
-crar.jar
+crar.jar (available on Zenodo - https://zenodo.org/record/5115300#.YPyOcDrQ9H7)
 replication-package-application.properties
 ```
 
